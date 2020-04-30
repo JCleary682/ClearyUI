@@ -1,0 +1,37 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar__links {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	background-color: #555;
+	overflow: auto;
+	padding: 0rem;
+	a {
+		text-align: center;
+		padding: 12px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 17px;
+		&:hover {
+			background-color: #000;
+		}
+	}
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  	.navbar {
+  		a {
+	    	float: none;
+	    	display: block;
+    	}
+  	}
+}
