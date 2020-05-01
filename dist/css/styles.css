@@ -4,35 +4,46 @@ body {
   background-color: #d1ffd2;
   font-family: 'Ubuntu', sans-serif; }
 
-.navbar__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  background-color: #d1ffd2;
-  overflow: auto;
-  padding: 0.3rem;
-  border-bottom: 2px solid #4d4d4d; }
-  .navbar__links a {
+.container {
+  height: 100vh; }
+  .container .navbar__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    background-color: #d1ffd2;
+    overflow: auto;
+    padding: 0.3rem;
+    border-bottom: 2px solid #9a9a9a; }
+    .container .navbar__links a {
+      text-align: center;
+      padding: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      height: 20px;
+      width: 60px;
+      margin: 0 .5rem; }
+      .container .navbar__links a:hover {
+        color: gray; }
+    .container .navbar__links .icon {
+      display: none; }
+    .container .navbar__links #contact {
+      background-color: #ffa500;
+      border-radius: 1.6rem; }
+    .container .navbar__links .logo-left {
+      width: 100%; }
+  .container footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    padding: 12px;
-    color: #4d4d4d;
-    text-decoration: none;
-    font-size: 17px; }
-    .navbar__links a:hover {
-      background-color: #000; }
-  .navbar__links .icon {
-    display: none; }
-  .navbar__links #contact {
-    background-color: #ffa500;
-    border-radius: 1.6rem; }
-
-.active {
-  background-color: #4CAF50;
-  border-radius: 1.6rem; }
+    padding: 10px;
+    background-color: gray; }
 
 @media screen and (max-width: 600px) {
   .navbar__links a:not(:first-child) {
