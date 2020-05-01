@@ -1,37 +1,62 @@
+$primary-background-color: #d1ffd2;
+$theme-black: #4d4d4d;
+$theme-orange: #ffa500;
+// $secondary-background-color:;
+
 body {
 	padding: 0;
 	margin: 0;
+	background-color: $primary-background-color;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar__links {
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
-	background-color: #555;
+	background-color: $primary-background-color;
 	overflow: auto;
-	padding: 0rem;
+	padding: 0.3rem;
+	border-bottom: 2px solid $theme-black; 
+
 	a {
 		text-align: center;
 		padding: 12px;
-		color: #fff;
+		color: $theme-black;
 		text-decoration: none;
 		font-size: 17px;
 		&:hover {
 			background-color: #000;
 		}
 	}
+
+	.icon {
+		display: none;
+	}
+
+	#contact {
+		background-color: $theme-orange;
+		border-radius: 1.6rem;
+	}
 }
 
 .active {
 	background-color: #4CAF50;
+	border-radius: 1.6rem;
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  	.navbar {
-  		a {
-	    	float: none;
-	    	display: block;
-    	}
-  	}
+// Add media Queries to ensure navabr is responsive
+// When screen is less than 600px wide, hide all links, except for the first one
+// Show the hamburger icon which opens and closes the navbar
+@media screen and (max-width: 600px) {
+	.navbar__links a {
+		&:not(:first-child) {
+			display: none;
+		}
+		&.icon {
+			float: right;
+			display: block;
+		}
+	}
 }
+

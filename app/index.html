@@ -9,6 +9,12 @@
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="../dist/css/styles.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,11 +22,15 @@
   <!-- Navbar -->
 <!--   <div class="navbar__container"> -->
     <div class="navbar__links">
-      <a href="#">Home</a>
+      <a href="#" class="active">Home</a>
       <a href="#">About James</a>
       <a href="#">Projects</a>
       <a href="#">CV</a>
-      <a href="#">Contact</a>
+      <a href="#" id="contact">Contact</a>
+      <!-- Hamburger Menu on Mobile -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 <!--   </div> -->
 

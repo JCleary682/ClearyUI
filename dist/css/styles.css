@@ -1,6 +1,8 @@
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-color: #d1ffd2;
+  font-family: 'Ubuntu', sans-serif; }
 
 .navbar__links {
   display: -webkit-box;
@@ -10,23 +12,31 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  background-color: #555;
+  background-color: #d1ffd2;
   overflow: auto;
-  padding: 0rem; }
+  padding: 0.3rem;
+  border-bottom: 2px solid #4d4d4d; }
   .navbar__links a {
     text-align: center;
     padding: 12px;
-    color: #fff;
+    color: #4d4d4d;
     text-decoration: none;
     font-size: 17px; }
     .navbar__links a:hover {
       background-color: #000; }
+  .navbar__links .icon {
+    display: none; }
+  .navbar__links #contact {
+    background-color: #ffa500;
+    border-radius: 1.6rem; }
 
 .active {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+  border-radius: 1.6rem; }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
+@media screen and (max-width: 600px) {
+  .navbar__links a:not(:first-child) {
+    display: none; }
+  .navbar__links a.icon {
+    float: right;
     display: block; } }
