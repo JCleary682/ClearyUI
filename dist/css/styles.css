@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #d1ffd2;
+  background-color: #fff;
   font-family: 'Ubuntu', sans-serif; }
 
 .container {
@@ -14,21 +14,24 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    background-color: #d1ffd2;
+    background-color: #fff;
     overflow: auto;
     padding: 0.3rem;
     border-bottom: 2px solid #9a9a9a; }
     .container .navbar__links a {
       text-align: center;
       padding: 12px;
-      color: #fff;
+      color: #00008B;
       text-decoration: none;
       font-size: 17px;
       height: 20px;
       width: 60px;
       margin: 0 .5rem; }
       .container .navbar__links a:hover {
-        color: gray; }
+        color: black;
+        border-bottom: 2px solid black; }
+      .container .navbar__links a.active {
+        border-bottom: 2px solid #00008B; }
     .container .navbar__links .icon {
       display: none; }
     .container .navbar__links #contact {
@@ -36,6 +39,24 @@ body {
       border-radius: 1.6rem; }
     .container .navbar__links .logo-left {
       width: 100%; }
+  .container .content-container .left-content {
+    width: 45vw;
+    float: left;
+    padding: 2rem; }
+  .container .content-container .right-content {
+    width: 45vw;
+    float: right;
+    padding: 2rem; }
+    .container .content-container .right-content .view-projects {
+      text-align: center;
+      padding: .8rem;
+      text-decoration: none;
+      font-size: 17px;
+      height: 20px;
+      width: 60px;
+      margin: 0 .5rem;
+      background-color: #ffa500;
+      border-radius: 1.6rem; }
   .container footer {
     position: fixed;
     left: 0;

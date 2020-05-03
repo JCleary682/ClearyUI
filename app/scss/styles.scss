@@ -1,4 +1,5 @@
-$primary-background-color: #d1ffd2;
+$primary-background-color: #fff;
+$primary-link-color: #00008B;
 $theme-black: #4d4d4d;
 $theme-orange: #ffa500;
 $theme-white: #fff;
@@ -26,14 +27,19 @@ body {
 		a {
 			text-align: center;
 			padding: 12px;
-			color: $theme-white;
+			color: $primary-link-color;
 			text-decoration: none;
 			font-size: 17px;
 			height: 20px;
 			width: 60px;
 			margin: 0 .5rem;
 			&:hover {
-				color: darken($theme-white, 50%);
+				color: darken($theme-black, 50%);
+				border-bottom: 2px solid darken($theme-black, 50%);
+			}
+
+			&.active {
+				border-bottom: 2px solid $primary-link-color;
 			}
 		}
 
@@ -48,6 +54,31 @@ body {
 
 		.logo-left {
 			width: 100%;
+		}
+	}
+
+	.content-container {
+		.left-content {
+			width: 45vw;
+			float: left;
+			padding:2rem;
+		}
+		.right-content {
+			width: 45vw;
+			float: right;
+			padding: 2rem;
+
+			.view-projects {
+				text-align: center;
+				padding: .8rem;
+				text-decoration: none;
+				font-size: 17px;
+				height: 20px;
+				width: 60px;
+				margin: 0 .5rem;
+				background-color: $theme-orange;
+				border-radius: 1.6rem;
+			}
 		}
 	}
 
